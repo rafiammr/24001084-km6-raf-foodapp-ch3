@@ -42,14 +42,14 @@ class MainActivity : AppCompatActivity() {
 
     private fun setListMenu() {
         val data = listOf(
-            Menu(image = R.drawable.img_menu_dimsum, name = "Dimsum Mix", price = 80000.00),
-            Menu(image = R.drawable.img_menu_pukis, name = "Kue pukis pandan", price = 80000.00),
-            Menu(image = R.drawable.img_menu_martabak_manis, name = "Martabak manis", price = 80000.00),
-            Menu(image = R.drawable.img_menu_martabak_telur, name = "Martabak telur", price = 80000.00),
-            Menu(image = R.drawable.img_banner, name = "Food 5", price = 80000.00),
-            Menu(image = R.drawable.img_banner, name = "Food 6", price = 80000.00),
-            Menu(image = R.drawable.img_banner, name = "Food 7", price = 80000.00),
-            Menu(image = R.drawable.img_banner, name = "Food 8", price = 80000.00),
+            Menu(image = R.drawable.img_menu_dimsum, name = "Dimsum Mix", price = 20000.00),
+            Menu(image = R.drawable.img_menu_pukis, name = "Kue pukis pandan", price = 15000.00),
+            Menu(image = R.drawable.img_menu_martabak_manis, name = "Martabak manis", price = 23000.00),
+            Menu(image = R.drawable.img_menu_martabak_telur, name = "Martabak telur", price = 30000.00),
+            Menu(image = R.drawable.img_menu_takoyaki, name = "Takoyaki", price = 13000.00),
+            Menu(image = R.drawable.img_menu_corndog, name = "Corndog", price = 10000.00),
+            Menu(image = R.drawable.img_menu_topokki, name = "Topokki", price = 15000.00),
+            Menu(image = R.drawable.img_menu_pempek, name = "Pempek", price = 25000.00),
         )
         binding.rvMenu.apply {
             adapter = this@MainActivity.adapterMenu
