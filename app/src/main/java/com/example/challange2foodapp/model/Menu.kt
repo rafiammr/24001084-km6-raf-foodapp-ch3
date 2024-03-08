@@ -6,7 +6,7 @@ import java.util.UUID
 data class Menu(
     var id: String = UUID.randomUUID().toString(),
     @DrawableRes
-    var image : Int,
-    var price : Double,
-    var name : String,
+    var image: Int,
+    var price: Double,
+    var name: String,
 )
