@@ -1,10 +1,10 @@
-package com.example.foodappchallenge.adapter
+package com.example.challange2foodapp.menulist.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.challange2foodapp.databinding.ItemCategoryBinding
-import com.example.foodappchallenge.model.Category
+import com.example.challange2foodapp.data.model.Category
 
 
 class CategoryAdapter : RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>() {
