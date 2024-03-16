@@ -1,7 +1,6 @@
-package com.example.challange2foodapp.menulist.adapter
+package com.example.challange2foodapp.presentation.menulist.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
@@ -11,9 +10,9 @@ import com.example.challange2foodapp.base.ViewHolderBinder
 import com.example.challange2foodapp.databinding.ItemMenuBinding
 import com.example.challange2foodapp.databinding.ItemMenuListBinding
 import com.example.challange2foodapp.data.model.Menu
-import com.example.challange2foodapp.utils.toIndonesianFormat
 
 class MenuAdapter(
+    private val listener: OnItemClickedListener<Menu>,
     private val listMode: Int = MODE_LIST
     ) :
     RecyclerView.Adapter<ViewHolder>() {
@@ -27,12 +26,10 @@ class MenuAdapter(
     private var asyncDataDiffer = AsyncListDiffer(
         this, object : DiffUtil.ItemCallback<Menu>() {
             override fun areItemsTheSame(oldItem: Menu, newItem: Menu): Boolean {
-                //membandingkan apakah item tersebut sama
-                return oldItem.name == newItem.name
+                return oldItem.id == newItem.id
             }
 
             override fun areContentsTheSame(oldItem: Menu, newItem: Menu): Boolean {
-                // yang dibandingkan adalah containnya
                 return oldItem.hashCode() == newItem.hashCode()
             }
         }
@@ -48,14 +45,14 @@ class MenuAdapter(
                 LayoutInflater.from(parent.context),
                 parent,
                 false
-            ),
+            ), listener
         ) else {
             MenuListItemViewHolder(
                 ItemMenuListBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
-                ),
+                ), listener
             )
         }
     }
@@ -67,4 +64,8 @@ class MenuAdapter(
         (holder as ViewHolderBinder<Menu>).bind(asyncDataDiffer.currentList[position])
     }
 
+}
+
+interface OnItemClickedListener<T>{
+    fun onItemClicked(item: T)
 }
