@@ -11,7 +11,7 @@ class MenuDataSourceImpl() : MenuDataSource {
     override fun getMenuData(): List<Menu> {
         return mutableListOf(
             Menu(
-                image = R.drawable.img_menu_dimsum,
+                imageMenu = R.drawable.img_menu_dimsum,
                 name = "Dimsum Mix",
                 price = 20000.00,
                 shortDesc = "ini makanan",
@@ -19,7 +19,7 @@ class MenuDataSourceImpl() : MenuDataSource {
                 urlLocation = "https://maps.app.goo.gl/h4wQKqaBuXzftGK77"
             ),
             Menu(
-                image = R.drawable.img_menu_pukis,
+                imageMenu = R.drawable.img_menu_pukis,
                 name = "Kue pukis pandan",
                 price = 15000.00,
                 shortDesc = "ini makanan",
@@ -27,7 +27,7 @@ class MenuDataSourceImpl() : MenuDataSource {
                 urlLocation = "https://maps.app.goo.gl/h4wQKqaBuXzftGK77"
             ),
             Menu(
-                image = R.drawable.img_menu_martabak_manis,
+                imageMenu = R.drawable.img_menu_martabak_manis,
                 name = "Martabak manis",
                 price = 23000.00,
                 shortDesc = "ini makanan",
@@ -35,7 +35,7 @@ class MenuDataSourceImpl() : MenuDataSource {
                 urlLocation = "https://maps.app.goo.gl/h4wQKqaBuXzftGK77"
             ),
             Menu(
-                image = R.drawable.img_menu_martabak_telur,
+                imageMenu = R.drawable.img_menu_martabak_telur,
                 name = "Martabak telur",
                 price = 30000.00,
                 shortDesc = "ini makanan",
@@ -43,7 +43,7 @@ class MenuDataSourceImpl() : MenuDataSource {
                 urlLocation = "https://maps.app.goo.gl/h4wQKqaBuXzftGK77"
             ),
             Menu(
-                image = R.drawable.img_menu_takoyaki,
+                imageMenu = R.drawable.img_menu_takoyaki,
                 name = "Takoyaki",
                 price = 13000.00,
                 shortDesc = "ini makanan",
@@ -51,7 +51,7 @@ class MenuDataSourceImpl() : MenuDataSource {
                 urlLocation = "https://maps.app.goo.gl/h4wQKqaBuXzftGK77"
             ),
             Menu(
-                image = R.drawable.img_menu_corndog,
+                imageMenu = R.drawable.img_menu_corndog,
                 name = "Corndog",
                 price = 10000.00,
                 shortDesc = "ini makanan",
@@ -59,7 +59,7 @@ class MenuDataSourceImpl() : MenuDataSource {
                 urlLocation = "https://maps.app.goo.gl/h4wQKqaBuXzftGK77"
             ),
             Menu(
-                image = R.drawable.img_menu_topokki,
+                imageMenu = R.drawable.img_menu_topokki,
                 name = "Topokki",
                 price = 15000.00,
                 shortDesc = "ini makanan",
@@ -67,7 +67,7 @@ class MenuDataSourceImpl() : MenuDataSource {
                 urlLocation = "https://maps.app.goo.gl/h4wQKqaBuXzftGK77"
             ),
             Menu(
-                image = R.drawable.img_menu_pempek,
+                imageMenu = R.drawable.img_menu_pempek,
                 name = "Pempek",
                 price = 25000.00,
                 shortDesc = "ini makanan",

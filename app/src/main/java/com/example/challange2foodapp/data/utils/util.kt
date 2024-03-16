@@ -1,4 +1,4 @@
-package com.example.challange2foodapp.utils
+package com.example.challange2foodapp.data.utils
 
 import java.text.NumberFormat
 import java.util.Locale
