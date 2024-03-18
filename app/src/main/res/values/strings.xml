@@ -9,4 +9,8 @@
     <string name="button_add_to_cart">Tambahkan ke Keranjang - %s</string>
     <string name="sum">1</string>
     <string name="location">Lokasi</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_cart">Keranjang</string>
+    <string name="menu_history">Riwayat</string>
+    <string name="menu_profile">Profile</string>
 </resources>
