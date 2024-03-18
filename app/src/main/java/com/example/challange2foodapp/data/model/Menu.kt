@@ -16,4 +16,4 @@ data class Menu(
     var location: String,
     var urlLocation: String,
 
-) : Parcelable
+    ) : Parcelable

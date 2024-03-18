@@ -35,8 +35,8 @@ class CategoryDataSourceImpl() : CategoryDataSource {
                 name = "Seafood"
             ),
             Category(
-                imageCategory = R.drawable.img_category_beverages
-                , name = "Minuman"
+                imageCategory = R.drawable.img_category_beverages,
+                name = "Minuman"
             )
         )
     }

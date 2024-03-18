@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.challange2foodapp.R
 import com.example.challange2foodapp.data.datasource.CategoryDataSource
 import com.example.challange2foodapp.data.datasource.CategoryDataSourceImpl
-import com.example.challange2foodapp.databinding.FragmentMenuListBinding
+import com.example.challange2foodapp.databinding.FragmentMenuBinding
 import com.example.challange2foodapp.data.datasource.MenuDataSource
 import com.example.challange2foodapp.data.datasource.MenuDataSourceImpl
 import com.example.challange2foodapp.data.model.Menu
@@ -24,7 +24,7 @@ import com.example.challange2foodapp.presentation.menulist.adapter.OnItemClicked
 
 class MenuFragment : Fragment() {
 
-    private lateinit var binding: FragmentMenuListBinding
+    private lateinit var binding: FragmentMenuBinding
     private var adapterMenu: MenuAdapter? = null
     private var adapterCategory: CategoryAdapter? = null
     private val dataSourceMenu: MenuDataSource by lazy { MenuDataSourceImpl() }
@@ -36,7 +36,7 @@ class MenuFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = FragmentMenuListBinding.inflate(layoutInflater, container, false)
+        binding = FragmentMenuBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 
