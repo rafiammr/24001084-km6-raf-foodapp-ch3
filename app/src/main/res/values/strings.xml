@@ -9,6 +9,4 @@
     <string name="button_add_to_cart">Tambahkan ke Keranjang - %s</string>
     <string name="sum">1</string>
     <string name="location">Lokasi</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
