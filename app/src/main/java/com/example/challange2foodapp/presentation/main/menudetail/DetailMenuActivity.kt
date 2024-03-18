@@ -1,4 +1,4 @@
-package com.example.challange2foodapp.presentation.menudetail
+package com.example.challange2foodapp.presentation.main.menudetail
 
 import android.content.Intent
 import android.net.Uri

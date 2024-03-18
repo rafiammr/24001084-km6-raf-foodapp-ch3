@@ -1,4 +1,4 @@
-package com.example.challange2foodapp.presentation.menulist
+package com.example.challange2foodapp.presentation.feature
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -12,19 +12,19 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.challange2foodapp.R
 import com.example.challange2foodapp.data.datasource.CategoryDataSource
 import com.example.challange2foodapp.data.datasource.CategoryDataSourceImpl
-import com.example.challange2foodapp.databinding.FragmentMenuBinding
+import com.example.challange2foodapp.databinding.FragmentHomeBinding
 import com.example.challange2foodapp.data.datasource.MenuDataSource
 import com.example.challange2foodapp.data.datasource.MenuDataSourceImpl
 import com.example.challange2foodapp.data.model.Menu
-import com.example.challange2foodapp.presentation.menudetail.DetailMenuActivity
+import com.example.challange2foodapp.presentation.main.menudetail.DetailMenuActivity
 import com.example.challange2foodapp.presentation.menulist.adapter.CategoryAdapter
 import com.example.challange2foodapp.presentation.menulist.adapter.MenuAdapter
 import com.example.challange2foodapp.presentation.menulist.adapter.OnItemClickedListener
 
 
-class MenuFragment : Fragment() {
+class HomeFragment : Fragment() {
 
-    private lateinit var binding: FragmentMenuBinding
+    private lateinit var binding: FragmentHomeBinding
     private var adapterMenu: MenuAdapter? = null
     private var adapterCategory: CategoryAdapter? = null
     private val dataSourceMenu: MenuDataSource by lazy { MenuDataSourceImpl() }
@@ -36,7 +36,7 @@ class MenuFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = FragmentMenuBinding.inflate(layoutInflater, container, false)
+        binding = FragmentHomeBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 
@@ -50,7 +50,7 @@ class MenuFragment : Fragment() {
 
     private fun setListCategory() {
         binding.rvCategory.apply {
-            adapter = this@MenuFragment.adapterCategory
+            adapter = this@HomeFragment.adapterCategory
             layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         }
         adapterCategory?.submitData(dataSourceCategory.getCategoryData())
@@ -80,7 +80,7 @@ class MenuFragment : Fragment() {
             }
         )
         binding.rvMenu.apply {
-            adapter = this@MenuFragment.adapterMenu
+            adapter = this@HomeFragment.adapterMenu
             layoutManager = GridLayoutManager(requireContext(), if (isUsingGrid) 2 else 1)
         }
         adapterMenu?.submitData(dataSourceMenu.getMenuData())
