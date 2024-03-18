@@ -4,8 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:minHeight="300dp">
+    android:layout_height="match_parent"
+    android:layout_margin="8dp">
 
     <ImageView
         android:id="@+id/iv_icon_store"
@@ -39,6 +39,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/iv_icon_store"
         app:layout_constraintTop_toBottomOf="@id/tv_location"
-        tools:text="@tools:sample/lorem" />
+        tools:text="Rafi Ammar Dinata Rafi Ammar Dinata Rafi Ammar Dinata Rafi Ammar Dinata Rafi Ammar Dinata Rafi Ammar Dinata Rafi Ammar Dinata Rafi Ammar Dinata Rafi Ammar Dinata Rafi Ammar Dinata Rafi Ammar Dinata Rafi Ammar Dinata Rafi Ammar Dinata Rafi Ammar Dinata Rafi Ammar Dinata Rafi Ammar Dinata" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

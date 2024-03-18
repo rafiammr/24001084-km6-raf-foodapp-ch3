@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.core.widget.NestedScrollView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,18 +20,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-    </androidx.core.widget.NestedScrollView>
-
-    <com.google.android.material.divider.MaterialDivider
-        android:id="@+id/divider_detail_2"
-        android:layout_width="match_parent"
-        android:layout_height="8dp"
-        android:layout_marginVertical="8dp"
-        app:layout_constraintBottom_toTopOf="@id/layout_button_add_to_cart" />
+    </ScrollView>
 
     <include
         android:id="@+id/layout_button_add_to_cart"
-        layout="@layout/layout_detail_button_add_to_cart"
+        layout="@layout/layout_button_add_to_cart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
