@@ -16,6 +16,7 @@
         android:textStyle="bold"/>
 
     <LinearLayout
+        android:id="@+id/ly_counter_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/btn_add_to_cart"
