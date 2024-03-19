@@ -13,4 +13,12 @@
     <string name="menu_cart">Keranjang</string>
     <string name="menu_history">Riwayat</string>
     <string name="menu_profile">Profile</string>
+    <string name="profile_username">Username</string>
+    <string name="profile_username_fill">Username</string>
+    <string name="profile_password">Password</string>
+    <string name="profile_password_fill">Password</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_email_fill">Email</string>
+    <string name="profile_no_telepon">No. Telepon</string>
+    <string name="profile_no_telepon_fill">No. Telepon</string>
 </resources>

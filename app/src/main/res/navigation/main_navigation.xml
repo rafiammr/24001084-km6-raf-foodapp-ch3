@@ -3,19 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/menuListFragment">
+    app:startDestination="@id/navigation_home">
 
     <fragment
-        android:id="@+id/menuListFragment"
+        android:id="@+id/navigation_home"
         android:name="com.example.challange2foodapp.presentation.feature.HomeFragment"
-        android:label="fragment_menu_list"
+        android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_menuListFragment_to_detailMenuActivity"
-            app:destination="@id/detailMenuActivity" />
+            android:id="@+id/action_home_fragment_to_detail_menu_activity"
+            app:destination="@id/detail_menu_activity" />
     </fragment>
     <activity
-        android:id="@+id/detailMenuActivity"
+        android:id="@+id/detail_menu_activity"
         android:name="com.example.challange2foodapp.presentation.menudetail.DetailMenuActivity"
-        android:label="DetailMenuActivity" />
+        android:label="detail_menu_activity" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.challange2foodapp.presentation.feature.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile"
+        />
 </navigation>

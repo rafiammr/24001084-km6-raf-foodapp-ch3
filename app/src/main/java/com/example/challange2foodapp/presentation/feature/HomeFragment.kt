@@ -36,7 +36,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = FragmentHomeBinding.inflate(layoutInflater, container, false)
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -89,7 +89,7 @@ class HomeFragment : Fragment() {
     private fun navigateToDetail(item: Menu) {
         val navController = findNavController()
         val bundle = bundleOf(Pair(DetailMenuActivity.EXTRAS_ITEM, item))
-        navController.navigate(R.id.action_menuListFragment_to_detailMenuActivity, bundle)
+        navController.navigate(R.id.action_home_fragment_to_detail_menu_activity, bundle)
     }
 
 }
